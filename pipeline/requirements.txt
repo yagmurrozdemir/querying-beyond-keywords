@@ -1,0 +1,6 @@
+elasticsearch==8.15.0
+requests
+transformers
+torch
+openai==0.28.1
+pandas

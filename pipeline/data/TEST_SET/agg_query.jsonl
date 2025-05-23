@@ -1,0 +1,301 @@
+{"phase": 1, "table_id": "1-10007452-3", "question": "how many times is the fuel propulsion is cng?", "sql": {"sel": 3, "conds": [[5, 0, "CNG"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10007452-3", "question": "how many times is the model ge40lfr?", "sql": {"sel": 1, "conds": [[2, 0, "GE40LFR"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10007452-3", "question": "how many times is the fleet series (quantity) is 468-473 (6)?", "sql": {"sel": 0, "conds": [[3, 0, "468-473 (6)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10015132-14", "question": "How many number does Fordham school have?", "sql": {"sel": 1, "conds": [[5, 0, "Fordham"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10021158-3", "question": "How many wins were there when the money list rank was 183?", "sql": {"sel": 3, "conds": [[8, 0, "183"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10021158-3", "question": "What time was the highest for 2nd finishers?", "sql": {"sel": 4, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-1004033-1", "question": "When did the Metrostars have their first Rookie of the Year winner?", "sql": {"sel": 0, "conds": [[4, 0, "MetroStars"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1004033-1", "question": "How many teams had a #1 draft pick that won the Rookie of the Year Award?", "sql": {"sel": 4, "conds": [[5, 0, "1"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10023387-1", "question": "what's the total number of singles w-l with doubles w-l of 0–0 and total w-l of 3–1", "sql": {"sel": 3, "conds": [[4, 0, "0–0"], [2, 0, "3–1"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1007688-1", "question": "what is the number of relapsing fever when malaria is 3000", "sql": {"sel": 3, "conds": [[5, 0, "3000"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1007688-1", "question": "what is the number of smallpox when typhoid fever is 293", "sql": {"sel": 4, "conds": [[2, 0, 293]], "agg": 3}}
+{"phase": 1, "table_id": "1-1009087-1", "question": "The season premiere aired on September 11, 2000 aired on how many networks? ", "sql": {"sel": 1, "conds": [[2, 0, "September 11, 2000"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1011906-1", "question": "what is the minimum population canada 2011 census with seat of rcm being cowansville", "sql": {"sel": 1, "conds": [[4, 0, "Cowansville"]], "agg": 2}}
+{"phase": 1, "table_id": "1-101196-1", "question": "How many County Kerry have 53% Irish speakers?", "sql": {"sel": 1, "conds": [[4, 0, "53%"], [0, 0, "County Kerry"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10118412-6", "question": "What is the the Chinese population for the state that has a Filipino population of 1474707?", "sql": {"sel": 2, "conds": [[3, 0, 1474707]], "agg": 2}}
+{"phase": 1, "table_id": "1-10118412-6", "question": "How many States have an Indian population of 30947?", "sql": {"sel": 3, "conds": [[4, 0, 30947]], "agg": 3}}
+{"phase": 1, "table_id": "1-10118412-6", "question": "What is the highest Indian population?", "sql": {"sel": 4, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-10121127-1", "question": "How many Australians were in the UN commission on Korea?", "sql": {"sel": 4, "conds": [[1, 0, "UN Commission on Korea"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10120207-8", "question": "What is the number of season premieres were 10.17 people watched?", "sql": {"sel": 2, "conds": [[6, 0, "10.17"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1012730-1", "question": "How many wins happened in 1983?", "sql": {"sel": 2, "conds": [[0, 0, 1983]], "agg": 2}}
+{"phase": 1, "table_id": "1-1012730-1", "question": "How many top tens had an average start of 29.4?", "sql": {"sel": 4, "conds": [[6, 0, "29.4"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1012730-1", "question": "How many poles had an average finish of 19.1?", "sql": {"sel": 5, "conds": [[7, 0, "19.1"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10128185-2", "question": "What was the lowest number of votes Scotland cast?", "sql": {"sel": 4, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-1013129-1", "question": "What is the smallest pick for the player, brett lindros?", "sql": {"sel": 0, "conds": [[1, 0, "Brett Lindros"]], "agg": 2}}
+{"phase": 1, "table_id": "1-101336-1", "question": "What is the number for t c (k) when the notation is tl-2212?", "sql": {"sel": 2, "conds": [[1, 0, "Tl-2212"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10138926-1", "question": "How many 2001 censuses are there on number 13?", "sql": {"sel": 4, "conds": [[0, 0, 13]], "agg": 3}}
+{"phase": 1, "table_id": "1-1014319-1", "question": "How many songs received a 10 from Goodman and were rated by Tonioli?", "sql": {"sel": 5, "conds": [[3, 0, "10"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1014319-1", "question": "How many scores did Goodman give to \"samba / young hearts run free\", which was in second place?", "sql": {"sel": 3, "conds": [[7, 0, "Second place"], [1, 0, "Samba / Young Hearts Run Free"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10160447-1", "question": "what's the total number of position with driver  robby gordon", "sql": {"sel": 0, "conds": [[1, 0, "Robby Gordon"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10160447-1", "question": "what's the maximum position with winnings  $50,000", "sql": {"sel": 0, "conds": [[3, 0, "$50,000"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10236830-1", "question": "What was the number of nominations for natalia raskokoha?", "sql": {"sel": 0, "conds": [[1, 0, "Natalia Raskokoha"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10240125-1", "question": "What is the highest value of Total Goals?", "sql": {"sel": 7, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-10240125-1", "question": "When FA Cup Apps is 9 what is the smallest number of FA Cup Goals?", "sql": {"sel": 5, "conds": [[4, 0, 9]], "agg": 2}}
+{"phase": 1, "table_id": "1-10240125-1", "question": "What is the smallest number of Total Goals?", "sql": {"sel": 7, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10240125-2", "question": "Whatis the number of total goals maximum?", "sql": {"sel": 7, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-10262329-1", "question": "HOW MANY TEMPERATURE INTERVALS ARE POSSIBLE TO USE WITH ACRYL? ", "sql": {"sel": 3, "conds": [[1, 0, "Acryl"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1028356-3", "question": "How many matches where played with Jim Pugh?", "sql": {"sel": 5, "conds": [[4, 0, "Jim Pugh"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1028356-3", "question": "How many matched scored 3–6, 7–6(5), 6–3?", "sql": {"sel": 3, "conds": [[6, 0, "3–6, 7–6(5), 6–3"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10284385-1", "question": "How many birthdays does Earl Hanley Beshlin have?", "sql": {"sel": 3, "conds": [[2, 0, "Earl Hanley Beshlin"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10312547-1", "question": "How many playerd Mrs. Darling in the 1999 Broadway?", "sql": {"sel": 8, "conds": [[0, 0, "Mrs. Darling"]], "agg": 3}}
+{"phase": 1, "table_id": "1-103084-4", "question": "How many years did BBC One rank 20th?", "sql": {"sel": 0, "conds": [[3, 0, "20th"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10321124-1", "question": " how many ↓ function / genus → with escherichia being espd", "sql": {"sel": 0, "conds": [[4, 0, "EspD"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10321805-1", "question": "How many original titles did Marriage Italian-Style have? ", "sql": {"sel": 2, "conds": [[1, 0, "Marriage Italian-Style"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10361453-2", "question": "The record of 7-3 had the largest attendance of what?", "sql": {"sel": 7, "conds": [[6, 0, "7-3"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10361230-1", "question": "Where does the defensive back position appear first?", "sql": {"sel": 0, "conds": [[4, 0, "Defensive Back"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10361230-1", "question": "What is the highest choice?", "sql": {"sel": 1, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-1036189-1", "question": "How many primers annulus colors were there when the color of the bullet tip was white?", "sql": {"sel": 1, "conds": [[2, 0, "White"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1036189-1", "question": "How many bullet tips colors had other features of a blue band on case base?", "sql": {"sel": 2, "conds": [[3, 0, "Blue band on case base"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1037590-1", "question": "How many years were there with 348 attempts?", "sql": {"sel": 6, "conds": [[4, 0, 348]], "agg": 3}}
+{"phase": 1, "table_id": "1-10402018-1", "question": "How many people play Frank in London?", "sql": {"sel": 2, "conds": [[0, 0, "Frank"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10392906-2", "question": "How many opponents were played on Saturday, June 9?", "sql": {"sel": 3, "conds": [[1, 0, "Saturday, June 9"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10392906-2", "question": "In what week was the first game played at the Commerzbank-Arena?", "sql": {"sel": 0, "conds": [[6, 0, "Commerzbank-Arena"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10413597-5", "question": "How many settings where there for episode 29 of the season?", "sql": {"sel": 3, "conds": [[0, 0, 29]], "agg": 3}}
+{"phase": 1, "table_id": "1-10416547-1", "question": "What is the total number of lyricist where the lyrics theme is romance and the song lasts 3:50?", "sql": {"sel": 4, "conds": [[7, 0, "Romance"], [8, 0, "3:50"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10416547-1", "question": "What is the total number of music genre/style in which the lyrics are a detective story?", "sql": {"sel": 5, "conds": [[7, 0, "Detective story"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1046071-1", "question": "What is the number of the division for the 1st round?", "sql": {"sel": 1, "conds": [[5, 0, "1st Round"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10420426-1", "question": "What is the number of podiums for season 2010 for campionato italiano superstars.", "sql": {"sel": 7, "conds": [[0, 0, "2010"], [1, 0, "Campionato Italiano Superstars"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-3", "question": "How many writers had an US air date of september 25, 1993?", "sql": {"sel": 4, "conds": [[5, 0, "September 25, 1993"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-3", "question": "How many villians were in No. 25?", "sql": {"sel": 7, "conds": [[0, 0, 25]], "agg": 3}}
+{"phase": 1, "table_id": "1-1046454-1", "question": "what being the maximum year where regular season is 4th, northwest", "sql": {"sel": 0, "conds": [[3, 0, "4th, Northwest"]], "agg": 1}}
+{"phase": 1, "table_id": "1-1046454-1", "question": "what is the total number of playoffs where regular season is 6th, southwest", "sql": {"sel": 4, "conds": [[3, 0, "6th, Southwest"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1046454-1", "question": "what is the maximum division", "sql": {"sel": 1, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-10470082-5", "question": "How many titles have the number 11", "sql": {"sel": 2, "conds": [[1, 0, 11]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-5", "question": "How many have Mrs. briar as a villain", "sql": {"sel": 0, "conds": [[7, 0, "Mrs. Briar"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-5", "question": "how many have the number 8", "sql": {"sel": 0, "conds": [[1, 0, 8]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-5", "question": "How many have the title \"the tale of the room for rent\"", "sql": {"sel": 1, "conds": [[2, 0, "\"The Tale of the Room for Rent\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-7", "question": "How many villains appeared in the episode titled \"The Tale of the Virtual Pets\"?", "sql": {"sel": 7, "conds": [[2, 0, "\"The Tale of The Virtual Pets\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-10470082-7", "question": "What is the largest # for an episode that was written by Allison Lea Bingeman?", "sql": {"sel": 1, "conds": [[4, 0, "Allison Lea Bingeman"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10477224-1", "question": "Name the number of species with sepal width of 3.4 and sepal length of 5.4", "sql": {"sel": 4, "conds": [[1, 0, "3.4"], [0, 0, "5.4"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1053802-1", "question": "How many winners are there of farma?", "sql": {"sel": 3, "conds": [[1, 0, "Farma"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10556257-1", "question": "What is the most cup goals for seasson 1911-12?", "sql": {"sel": 5, "conds": [[0, 0, "1911-12"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10566855-1", "question": "what's the minimum attendance with score  10.16 (76) – 9.22 (76)", "sql": {"sel": 6, "conds": [[3, 0, "10.16 (76) – 9.22 (76)"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10566855-1", "question": "what is the minimum attendance with score 8.16 (64) – 8.12 (60)", "sql": {"sel": 6, "conds": [[3, 0, "8.16 (64) – 8.12 (60)"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10568553-1", "question": "How many mileposts are there on Anne Street?", "sql": {"sel": 3, "conds": [[2, 0, "Anne Street"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1057262-1", "question": "What is the minimum amount for wool for 2001-02?", "sql": {"sel": 1, "conds": [[0, 0, "Wool"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1057316-1", "question": "How many wheels does the train owned by Texas and New Orleans Railroad #319 have?", "sql": {"sel": 1, "conds": [[3, 0, "Texas and New Orleans Railroad #319"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10581768-2", "question": "how many founded dates are listed for carlow university 1", "sql": {"sel": 3, "conds": [[0, 0, "Carlow University 1"]], "agg": 3}}
+{"phase": 1, "table_id": "1-106367-2", "question": "What is the least number of candidates running were there when 80 seats were won?", "sql": {"sel": 1, "conds": [[2, 0, 80]], "agg": 2}}
+{"phase": 1, "table_id": "1-106367-2", "question": "How many seats were won in the election with 125 candidates?", "sql": {"sel": 2, "conds": [[1, 0, 125]], "agg": 3}}
+{"phase": 1, "table_id": "1-10647639-1", "question": "How many people attended the game against the indianapolis colts?", "sql": {"sel": 6, "conds": [[2, 0, "Indianapolis Colts"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10646790-2", "question": "How many results are there for the 0-4 record?", "sql": {"sel": 3, "conds": [[5, 0, "0-4"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10646790-2", "question": "How many weeks are there that include the date October 11, 1969.", "sql": {"sel": 0, "conds": [[1, 0, "October 11, 1969"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10646790-2", "question": "How many weeks are there that include the date November 9, 1969.", "sql": {"sel": 0, "conds": [[1, 0, "November 9, 1969"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10646790-2", "question": "How many records are there at the War Memorial Stadium?", "sql": {"sel": 5, "conds": [[4, 0, "War Memorial Stadium"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10646790-2", "question": "What was the minimum attendance on December 7, 1969?", "sql": {"sel": 6, "conds": [[1, 0, "December 7, 1969"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10650711-1", "question": "what is the maximum pick # where player is anthony blaylock", "sql": {"sel": 0, "conds": [[2, 0, "Anthony Blaylock"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10650711-1", "question": "what is the minimum pick # where position is defensive tackle", "sql": {"sel": 0, "conds": [[3, 0, "Defensive Tackle"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10701133-1", "question": "What is the highest no. in season?", "sql": {"sel": 1, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-1067134-1", "question": "What is the least amount of season epidsodes?", "sql": {"sel": 1, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10705060-1", "question": "How many points for 2005?", "sql": {"sel": 6, "conds": [[0, 0, "2005"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10705060-1", "question": "how many positions in 2009?", "sql": {"sel": 7, "conds": [[0, 0, "2009"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10705060-1", "question": "what is the least number of poles?", "sql": {"sel": 4, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10705060-1", "question": "What is the total for 10th position?", "sql": {"sel": 6, "conds": [[7, 0, "10th"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10710364-2", "question": "What is the lowest sex ratio in rural areas?", "sql": {"sel": 6, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10710364-2", "question": "What is the lowest child sex ratio in groups where employment is 31.3%?", "sql": {"sel": 8, "conds": [[5, 0, "31.3%"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10716893-3", "question": "How many pre-race analysis occur when Allen Bestwick does the lap-by-lap?", "sql": {"sel": 3, "conds": [[4, 0, "Allen Bestwick"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10718192-2", "question": "What's the highest season number of an episode in the series?", "sql": {"sel": 1, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-10718525-2", "question": "How many titles got a viewership of 26.53 million?", "sql": {"sel": 2, "conds": [[6, 0, "26.53"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10718631-2", "question": "How many titles were there for the 113 episode?", "sql": {"sel": 2, "conds": [[0, 0, 113]], "agg": 3}}
+{"phase": 1, "table_id": "1-10725629-2", "question": "How many rounds were there of the Bosch Spark Plug Grand Prix?", "sql": {"sel": 0, "conds": [[1, 0, "Bosch Spark Plug Grand Prix"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10725629-2", "question": "On how many dates did the Michigan International Speedway hold a round?", "sql": {"sel": 4, "conds": [[2, 0, "Michigan International Speedway"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10748727-1", "question": "what is the greatest number of wins by japanese formula three?", "sql": {"sel": 4, "conds": [[1, 0, "Japanese Formula Three"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10798928-1", "question": "How many directors were there for the film Course Completed?", "sql": {"sel": 3, "conds": [[1, 0, "Course Completed"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10797463-1", "question": "How many villages had 21.7% of slovenes in 1991?", "sql": {"sel": 0, "conds": [[3, 0, "21.7%"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1081459-1", "question": "What is the minimum introduced value for the Departmental region?", "sql": {"sel": 2, "conds": [[4, 0, "Departmental"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1081459-1", "question": "What is the smallest introduced value?", "sql": {"sel": 2, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10812938-4", "question": "What is the earliest pick listed in the table.", "sql": {"sel": 0, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10842344-1", "question": "What's the latest episode in a season where the U.S. viewers totaled 14.37 million?", "sql": {"sel": 1, "conds": [[7, 0, "14.37"]], "agg": 1}}
+{"phase": 1, "table_id": "1-10819266-8", "question": "How many seasons is the season finale on May 26, 2010?", "sql": {"sel": 0, "conds": [[4, 0, "May 26, 2010"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10818465-1", "question": "What is the lowest ru?", "sql": {"sel": 1, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10815352-1", "question": "What's the minimum total attendance of the Premier League association football?", "sql": {"sel": 6, "conds": [[1, 0, "Association football"], [0, 0, "Premier League"]], "agg": 2}}
+{"phase": 1, "table_id": "1-10942714-1", "question": "How many are listed under 潮爆大狀", "sql": {"sel": 4, "conds": [[2, 0, "潮爆大狀"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10953197-4", "question": "What's the total number of episodes with the production code 2395113A?", "sql": {"sel": 2, "conds": [[6, 0, "2395113A"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10953197-6", "question": "give the least number of times an episode was shown from 1997-1998", "sql": {"sel": 1, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-10953197-6", "question": "how many times does the episode called \"coop de grace\" appear ", "sql": {"sel": 0, "conds": [[2, 0, "\"Coop de Grace\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-10975034-4", "question": "How many colleges have a DB position?", "sql": {"sel": 4, "conds": [[3, 0, "DB"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10960039-6", "question": "How many times were players named brett ralph were selected?", "sql": {"sel": 0, "conds": [[2, 0, "Brett Ralph"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10960039-6", "question": "How many fb players were drafted?", "sql": {"sel": 0, "conds": [[3, 0, "FB"]], "agg": 3}}
+{"phase": 1, "table_id": "1-10960039-6", "question": "How many players played for adams state school?", "sql": {"sel": 2, "conds": [[4, 0, "Adams State"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11056278-3", "question": "In Round 6, how many winning drivers were there?", "sql": {"sel": 4, "conds": [[0, 0, 6]], "agg": 3}}
+{"phase": 1, "table_id": "1-1104312-5", "question": "How many districts have an area of 17.72 KM2?", "sql": {"sel": 0, "conds": [[2, 0, "17.72"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11066073-1", "question": "What is the number of colour with the regisration number of mg-509?", "sql": {"sel": 1, "conds": [[4, 0, "MG-509"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11058032-1", "question": "How many episodes had 16.03 million viewers?", "sql": {"sel": 0, "conds": [[6, 0, "16.03"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11071897-1", "question": "What is the number of interregnum for duration 3 months, 6 days?", "sql": {"sel": 1, "conds": [[2, 0, "3 months, 6 days"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1108394-43", "question": "what is the minimum total", "sql": {"sel": 7, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11111116-6", "question": "Which episode in the series drew 3.6 million U.S. viewers? ", "sql": {"sel": 1, "conds": [[6, 0, "3.6"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11111116-6", "question": "How many times did episode 79 originally air? ", "sql": {"sel": 5, "conds": [[1, 0, 79]], "agg": 3}}
+{"phase": 1, "table_id": "1-1112176-1", "question": "League apps (sub) maximum?", "sql": {"sel": 2, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-11206787-5", "question": "What is the number of capacity at somerset park?", "sql": {"sel": 2, "conds": [[1, 0, "Somerset Park"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11206787-5", "question": "What is the minimum average?", "sql": {"sel": 5, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11200856-1", "question": "How many times is 3 credits 180?", "sql": {"sel": 1, "conds": [[3, 0, 180]], "agg": 3}}
+{"phase": 1, "table_id": "1-11200856-1", "question": "How many 3 credits are there with 5 credits of 5?", "sql": {"sel": 3, "conds": [[5, 0, "5"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11200856-1", "question": "How many 4 credits is the hand two pair?", "sql": {"sel": 4, "conds": [[0, 0, "Two pair"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11207040-5", "question": "What is the lowest attendance that East End Park has ever had?", "sql": {"sel": 4, "conds": [[1, 0, "East End Park"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11207040-5", "question": "What is the lowest attandance recorded at Cappielow?", "sql": {"sel": 4, "conds": [[1, 0, "Cappielow"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11214772-1", "question": "what is the total number of semi-finalist #2 where runner-up is east carolina", "sql": {"sel": 6, "conds": [[3, 0, "East Carolina"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11214212-1", "question": "what is the maximum year with registration of a minor child being 281", "sql": {"sel": 0, "conds": [[4, 0, 281]], "agg": 1}}
+{"phase": 1, "table_id": "1-11220799-2", "question": "How many episodes had their first air date on March 6, 2008?", "sql": {"sel": 0, "conds": [[1, 0, "March 6, 2008"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11222744-2", "question": "where title is beginning callanetics , what is the total of format ?", "sql": {"sel": 2, "conds": [[1, 0, "Beginning Callanetics"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11235334-2", "question": "How many episodes aired on october 27, 2008", "sql": {"sel": 1, "conds": [[2, 0, "October 27, 2008"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11235334-2", "question": "what is the most # that aired on september 29, 2008?", "sql": {"sel": 0, "conds": [[2, 0, "September 29, 2008"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11250-4", "question": "What is the least top division titles?", "sql": {"sel": 6, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11250-4", "question": "What is the least number of seasons in top division?", "sql": {"sel": 3, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11253290-2", "question": "What is the lowest rank (night) for having viewers (millions) 5.25?", "sql": {"sel": 7, "conds": [[5, 0, "5.25"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11253290-2", "question": "How many times was the episode named \"conference call\"?", "sql": {"sel": 0, "conds": [[1, 0, "\"Conference Call\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-11253290-2", "question": "How many times was the rank (night) 11?", "sql": {"sel": 5, "conds": [[7, 0, 11]], "agg": 3}}
+{"phase": 1, "table_id": "1-11251109-3", "question": "What is the number of rank with the viewership of 5.96 million?", "sql": {"sel": 9, "conds": [[8, 0, "5.96"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11274401-3", "question": "What's the total number of episodes whose original airings were viewed by 1.82 million viewers?", "sql": {"sel": 2, "conds": [[7, 0, "1.82"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11318462-5", "question": "how many crew had u15 3rd iv being bgs and u15 1st iv being acgs and open 1st viii being acgs", "sql": {"sel": 0, "conds": [[9, 0, "BGS"], [7, 0, "ACGS"], [1, 0, "ACGS"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11318462-5", "question": "how many open 2nd viii had u15 3rd iv being gt", "sql": {"sel": 2, "conds": [[9, 0, "GT"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11318462-29", "question": "How many schools have an enrollment of 850?", "sql": {"sel": 3, "conds": [[2, 0, 850]], "agg": 3}}
+{"phase": 1, "table_id": "1-1132568-3", "question": "How many on the list are called the Austrian Grand Prix?", "sql": {"sel": 0, "conds": [[1, 0, "Austrian Grand Prix"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11326124-3", "question": "How many rounds were 2r?", "sql": {"sel": 8, "conds": [[2, 0, "2R"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1137704-2", "question": "whatthe minimum round where grand prix is german grand prix", "sql": {"sel": 0, "conds": [[1, 0, "German Grand Prix"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1137704-2", "question": "what of the total number of date where grand prix is portuguese grand prix", "sql": {"sel": 2, "conds": [[1, 0, "Portuguese Grand Prix"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1137707-2", "question": "What is the number of pole position with a round of 15?", "sql": {"sel": 4, "conds": [[0, 0, 15]], "agg": 3}}
+{"phase": 1, "table_id": "1-11390711-4", "question": "How many providers were founded in 1964?", "sql": {"sel": 4, "conds": [[5, 0, 1964]], "agg": 3}}
+{"phase": 1, "table_id": "1-11391954-3", "question": "What is the minimum number for the half marathon (womens)?", "sql": {"sel": 5, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-1139087-2", "question": "How many events did nigel mansell drive the fastest and a mclaren - honda win?", "sql": {"sel": 1, "conds": [[7, 0, "McLaren - Honda"], [5, 0, "Nigel Mansell"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140074-2", "question": "what's the total number of race winner with rnd being 10", "sql": {"sel": 6, "conds": [[0, 0, 10]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140073-2", "question": "How many rounds did Patrick Tambay record the fastest lap?", "sql": {"sel": 0, "conds": [[5, 0, "Patrick Tambay"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140076-2", "question": "How many races had the pole position Alain Prost and the race winner Keke Rosberg?", "sql": {"sel": 1, "conds": [[4, 0, "Alain Prost"], [6, 0, "Keke Rosberg"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140080-2", "question": "what's the minimum rnd with race  italian grand prix", "sql": {"sel": 0, "conds": [[1, 0, "Italian Grand Prix"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1140080-2", "question": "what's the total number of report with date  29 april", "sql": {"sel": 8, "conds": [[2, 0, "29 April"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140083-2", "question": "How many days is the Monaco Grand Prix?", "sql": {"sel": 2, "conds": [[1, 0, "Monaco Grand Prix"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140083-2", "question": "How many rounds were won with James Hunt as pole position and John Watson as  fastest lap?", "sql": {"sel": 0, "conds": [[4, 0, "James Hunt"], [5, 0, "John Watson"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140085-2", "question": "how many times is the pole position niki lauda and the race is monaco grand prix?", "sql": {"sel": 0, "conds": [[4, 0, "Niki Lauda"], [1, 0, "Monaco Grand Prix"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140103-6", "question": "How many dates have silverstone circuit", "sql": {"sel": 3, "conds": [[2, 0, "Silverstone"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140103-6", "question": "How many constructors are listed for the XVI BRDC international trophy race", "sql": {"sel": 5, "conds": [[1, 0, "XVI BRDC International Trophy"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140111-5", "question": "How many different kinds of reports are there for races that Juan Manuel Fangio won?", "sql": {"sel": 5, "conds": [[3, 0, "Juan Manuel Fangio"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1140113-5", "question": "How many constructors won the III Redex Trophy?", "sql": {"sel": 4, "conds": [[0, 0, "III RedeX Trophy"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11411026-2", "question": "How many titles were directed in series 79?", "sql": {"sel": 3, "conds": [[0, 0, 79]], "agg": 3}}
+{"phase": 1, "table_id": "1-11404452-1", "question": "When did Shelia Lawrence join the series?", "sql": {"sel": 0, "conds": [[2, 0, "Shelia Lawrence"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11464746-1", "question": "How many houses are green?", "sql": {"sel": 0, "conds": [[4, 0, "Green"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11465521-2", "question": "How many opponents were there at the game with 64,087 people in attendance?", "sql": {"sel": 2, "conds": [[7, 0, "64,087"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1149495-1", "question": "How many people hosted the show in the year when Chenoa  ended up in fourth place?", "sql": {"sel": 8, "conds": [[5, 0, "Chenoa"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1149495-1", "question": "How many fourth places were there in 2003?", "sql": {"sel": 5, "conds": [[1, 0, "2003"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1147705-1", "question": "How many have are model 2.4 awd?", "sql": {"sel": 4, "conds": [[0, 0, "2.4 AWD"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1147705-1", "question": "How many engine b5204 t3?", "sql": {"sel": 3, "conds": [[4, 0, "B5204 T3"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1147705-1", "question": "How many engine b5234 t3?", "sql": {"sel": 0, "conds": [[4, 0, "B5234 T3"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1147701-4", "question": " how many power (ps) with torque (nm@rpm) being 240@2200-5000", "sql": {"sel": 1, "conds": [[2, 0, "240@2200-5000"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-11", "question": "How many positions are for creighton?", "sql": {"sel": 3, "conds": [[5, 0, "Creighton"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-4", "question": "What is the largest jersey number for the player from maryland", "sql": {"sel": 1, "conds": [[5, 0, "Maryland"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11545282-4", "question": "How many schools did darryl dawkins play for", "sql": {"sel": 5, "conds": [[0, 0, "Darryl Dawkins"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-5", "question": "How many schools are listed for the player who played the years for Jazz in 2010-11?", "sql": {"sel": 5, "conds": [[4, 0, "2010-11"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-6", "question": "How many players have played for Jazz during 2006-2007?", "sql": {"sel": 0, "conds": [[4, 0, "2006-2007"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-6", "question": "How many position does Jim Farmer play in?", "sql": {"sel": 3, "conds": [[0, 0, "Jim Farmer"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11545282-7", "question": "How many players only played for the Jazz in only 2010?", "sql": {"sel": 1, "conds": [[4, 0, "2010"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11603006-1", "question": "How many different scores are there for the Verizon Classic?", "sql": {"sel": 5, "conds": [[1, 0, "Verizon Classic"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11604804-5", "question": "What was the number of nickname founded 1918?", "sql": {"sel": 1, "conds": [[3, 0, 1918]], "agg": 3}}
+{"phase": 1, "table_id": "1-11621873-1", "question": "How many scores were at the Northville Long Island Classic?", "sql": {"sel": 5, "conds": [[1, 0, "Northville Long Island Classic"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11622255-1", "question": "what is the minimum purse( $ ) where tournament is ko olina senior invitational", "sql": {"sel": 3, "conds": [[1, 0, "Ko Olina Senior Invitational"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11622255-1", "question": "what is the maximum 1st prize( $ ) where score is 193 (-17)", "sql": {"sel": 6, "conds": [[5, 0, "193 (-17)"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11622562-1", "question": "How many tournaments ended with a score of 204 (-12)?", "sql": {"sel": 1, "conds": [[5, 0, "204 (-12)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11622840-1", "question": "How many tournaments recorded a score of 206 (-7)?", "sql": {"sel": 1, "conds": [[5, 0, "206 (-7)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11622771-1", "question": "How many purses were there for the  mar 16?", "sql": {"sel": 3, "conds": [[0, 0, "Mar 16"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11636213-7", "question": "How many matches had the result of 6–3, 6–2?", "sql": {"sel": 3, "conds": [[8, 0, "6–3, 6–2"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11642945-1", "question": "How many celebrities had an 18October2007 Original air Date?", "sql": {"sel": 1, "conds": [[3, 0, "18October2007"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11630008-7", "question": "What is the number of series with a title of \"with friends like these\"?", "sql": {"sel": 0, "conds": [[2, 0, "\"With Friends Like These\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-11630008-7", "question": "What is the number of series with production code 503?", "sql": {"sel": 0, "conds": [[6, 0, 503]], "agg": 3}}
+{"phase": 1, "table_id": "1-11658094-1", "question": "What is the minimum enrollment at barton college", "sql": {"sel": 4, "conds": [[0, 0, "Barton College"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1165048-1", "question": "what is the total number of coach where captain is grant welsh and win/loss is 5-15", "sql": {"sel": 3, "conds": [[4, 0, "Grant Welsh"], [2, 0, "5-15"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1165048-1", "question": "what is the maximum season where leading goalkicker is scott simister (54)", "sql": {"sel": 0, "conds": [[6, 0, "Scott Simister (54)"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11656578-2", "question": "How many different voivodenship have 747 900 citizes?", "sql": {"sel": 1, "conds": [[4, 0, "747 900"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11658094-3", "question": "How many times did anderson university leave?", "sql": {"sel": 7, "conds": [[0, 0, "Anderson University"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11662133-1", "question": "What is the minimum gross tonnage of the Munich? ", "sql": {"sel": 3, "conds": [[0, 0, "Munich"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11664625-2", "question": "Where is the first season that Anthony Hemingway appears?", "sql": {"sel": 1, "conds": [[3, 0, "Anthony Hemingway"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11664625-2", "question": "When is the first season there were 14.57 million U.S viewers?", "sql": {"sel": 1, "conds": [[6, 0, "14.57"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1167698-1", "question": "How many champions were there in 2009?", "sql": {"sel": 1, "conds": [[0, 0, "2009"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677100-15", "question": "How many players were from high point, nc?", "sql": {"sel": 4, "conds": [[3, 0, "High Point, NC"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677100-15", "question": "How many hometowns does the catcher have?", "sql": {"sel": 3, "conds": [[1, 0, "Catcher"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677100-17", "question": "How many schools did Bubba Starling attend?", "sql": {"sel": 2, "conds": [[0, 0, "Bubba Starling"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677100-4", "question": "How many positions did the player from Spring High School play?", "sql": {"sel": 1, "conds": [[2, 0, "Spring High School"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677100-7", "question": "How many schools did Mike Jones attend?", "sql": {"sel": 2, "conds": [[0, 0, "Mike Jones"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-2", "question": "HOW MANY PLAYERS PLAY FOR OREGON?", "sql": {"sel": 0, "conds": [[4, 0, "Oregon"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-11", "question": "How many players are from Delray Beach, Florida?", "sql": {"sel": 0, "conds": [[3, 0, "Delray Beach, Florida"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-11", "question": "How many schools did Derrick Green attend?", "sql": {"sel": 2, "conds": [[0, 0, "Derrick Green"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-11", "question": "How many positions does Greg Bryant play?", "sql": {"sel": 1, "conds": [[0, 0, "Greg Bryant"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-11", "question": "How many schools did Derrick Green attend?", "sql": {"sel": 2, "conds": [[0, 0, "Derrick Green"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677691-3", "question": "How many players are from Indianapolis, Indiana? ", "sql": {"sel": 0, "conds": [[3, 0, "Indianapolis, Indiana"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11677760-31", "question": "Name the total number of nba drafts that went to east side high school", "sql": {"sel": 5, "conds": [[2, 0, "East Side High School"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11680175-1", "question": "How many years where Neu-Vehlefanz had a number of 365?", "sql": {"sel": 0, "conds": [[4, 0, 365]], "agg": 3}}
+{"phase": 1, "table_id": "1-11680175-1", "question": "How many times did Neu-Vehlefanz occur when Schwante had 2.043?", "sql": {"sel": 4, "conds": [[2, 0, "2.043"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11680175-1", "question": "How many years where Eichstädt had a number of 939?", "sql": {"sel": 0, "conds": [[7, 0, 939]], "agg": 3}}
+{"phase": 1, "table_id": "1-11713303-2", "question": "How many have been replaced where the appointment date is 10 December 2007 and the manner of departure is quit?", "sql": {"sel": 4, "conds": [[5, 0, "10 December 2007"], [2, 0, "Quit"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11713303-2", "question": "How many manners of departure did peter voets have?", "sql": {"sel": 2, "conds": [[1, 0, "Peter Voets"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11715748-2", "question": "How many series has the title \"interior loft\"?", "sql": {"sel": 0, "conds": [[2, 0, "\"Interior Loft\""]], "agg": 3}}
+{"phase": 1, "table_id": "1-11694832-1", "question": "What is the first series number that Adele Lim wrote?", "sql": {"sel": 0, "conds": [[4, 0, "Adele Lim"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11734041-20", "question": "what is the total number of player where years for rockets is 1975-79", "sql": {"sel": 0, "conds": [[4, 0, "1975-79"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11734041-20", "question": "what is the total number of player where years for rockets is 2004-06", "sql": {"sel": 0, "conds": [[4, 0, "2004-06"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11734041-18", "question": "How many positions had jersey number 32", "sql": {"sel": 3, "conds": [[1, 0, "32"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1174162-1", "question": "What is the lowest date settled for chifley?", "sql": {"sel": 6, "conds": [[0, 0, "Chifley"]], "agg": 2}}
+{"phase": 1, "table_id": "1-1176371-1", "question": "What is the minimum of t20 matches?", "sql": {"sel": 5, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-1176371-1", "question": "What is the maximum fc matches?", "sql": {"sel": 3, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-1176371-1", "question": "What is the maximum fc matches at the racecourse?", "sql": {"sel": 3, "conds": [[0, 0, "The Racecourse"]], "agg": 1}}
+{"phase": 1, "table_id": "1-1176371-1", "question": "What is the maximum t20 on green lane?", "sql": {"sel": 5, "conds": [[0, 0, "Green Lane"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11780179-1", "question": "How many countries has a gdp (nominal) of $29.9 billion?", "sql": {"sel": 4, "conds": [[3, 0, "$29.9 billion"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1180228-1", "question": "How many releases did the DVD River Cottage forever have?", "sql": {"sel": 1, "conds": [[0, 0, "River Cottage Forever"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11793221-4", "question": "Name the number of complement for 4th hanoverian brigade", "sql": {"sel": 2, "conds": [[0, 0, "4th Hanoverian Brigade"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11803648-22", "question": "How many players had overall 78?", "sql": {"sel": 2, "conds": [[1, 0, "78"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11803648-22", "question": "What is the last round with club team Guelph Storm (ohl)?", "sql": {"sel": 0, "conds": [[5, 0, "Guelph Storm (OHL)"]], "agg": 1}}
+{"phase": 1, "table_id": "1-11803648-22", "question": "How many positions did player Ben Harpur play?", "sql": {"sel": 3, "conds": [[2, 0, "Ben Harpur"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1183842-1", "question": "Barry University had the highest enrollment of what number?", "sql": {"sel": 4, "conds": [[0, 0, "Barry University"]], "agg": 1}}
+{"phase": 1, "table_id": "1-1183842-1", "question": "If the enrollment is 3584, what's the largest founded?", "sql": {"sel": 2, "conds": [[4, 0, 3584]], "agg": 1}}
+{"phase": 1, "table_id": "1-1183842-1", "question": "Barry University had a maximum enrollment of what?", "sql": {"sel": 4, "conds": [[0, 0, "Barry University"]], "agg": 1}}
+{"phase": 1, "table_id": "1-1182314-5", "question": "what is the total number of percent (2000) where percent (1980) is 3.4%", "sql": {"sel": 6, "conds": [[2, 0, "3.4%"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1182314-5", "question": "what is the maximum norwegian americans (2000) where norwegian americans (1990) is 9170", "sql": {"sel": 5, "conds": [[3, 0, 9170]], "agg": 1}}
+{"phase": 1, "table_id": "1-1182314-5", "question": "what is the minimum norwegian americans (1980) where state is rhode island", "sql": {"sel": 1, "conds": [[0, 0, "Rhode Island"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11839306-2", "question": "What is the smallest track number?", "sql": {"sel": 1, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11839306-2", "question": "How many tracks are titled Mō Sukoshi Tōku?", "sql": {"sel": 1, "conds": [[4, 0, "Mō Sukoshi Tōku"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11900378-1", "question": "How many doubles champions were there for the Serbia f6 Futures tournament?", "sql": {"sel": 6, "conds": [[0, 0, "Serbia F6 Futures"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11900378-1", "question": "How many singles tournaments did Ludovic Walter win?", "sql": {"sel": 0, "conds": [[5, 0, "Ludovic Walter"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11908801-1", "question": "What is the number of nicknames for the meaning of god knows my journey.", "sql": {"sel": 1, "conds": [[4, 0, "God Knows My Journey"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11908801-1", "question": "What is the number of meaning where full name is chidinma anulika?", "sql": {"sel": 4, "conds": [[0, 0, "Chidinma Anulika"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11916083-1", "question": "What is the earliest year where the mintage (proof) is 25,000?", "sql": {"sel": 0, "conds": [[3, 0, "25,000"]], "agg": 2}}
+{"phase": 1, "table_id": "1-11951237-2", "question": "How many musical guests and songs were in episodes with a production code k0519?", "sql": {"sel": 5, "conds": [[7, 0, "K0519"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11951237-2", "question": "How many episodes originally aired on August 31, 1995?", "sql": {"sel": 2, "conds": [[6, 0, "August 31, 1995"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11951237-4", "question": "How many titles are there for season 8", "sql": {"sel": 2, "conds": [[1, 0, 8]], "agg": 3}}
+{"phase": 1, "table_id": "1-11960196-3", "question": "How many high points were at the wachovia center 18,347?", "sql": {"sel": 4, "conds": [[7, 0, "Wachovia Center 18,347"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11960407-4", "question": "How many times was the game 39?", "sql": {"sel": 8, "conds": [[0, 0, 39]], "agg": 3}}
+{"phase": 1, "table_id": "1-11960610-10", "question": "When gordon (27) had high points, what was the number of high assists?", "sql": {"sel": 6, "conds": [[4, 0, "Gordon (27)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11960944-7", "question": "How many high points were there in the game 67?", "sql": {"sel": 4, "conds": [[0, 0, 67]], "agg": 3}}
+{"phase": 1, "table_id": "1-11960944-4", "question": "how many times was the high rebounds by Mcdyess (9) and the high assists was by Billups (10)?", "sql": {"sel": 4, "conds": [[5, 0, "McDyess (9)"], [6, 0, "Billups (10)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11961582-4", "question": "What was the total number of games where A. Johnson (6) gave the most high assists?", "sql": {"sel": 0, "conds": [[6, 0, "A. Johnson (6)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11961582-4", "question": "What's the minimal game number in the season?", "sql": {"sel": 0, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-11964154-7", "question": "How many times was the final score  l 96–123 (ot)?", "sql": {"sel": 8, "conds": [[3, 0, "L 96–123 (OT)"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11964154-7", "question": "How many times was the high assists earl watson (5) and the date of the game was december 2?", "sql": {"sel": 3, "conds": [[6, 0, "Earl Watson (5)"], [1, 0, "December 2"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11964047-8", "question": "What is the number of the leading scorer for keyarena 16,640?", "sql": {"sel": 5, "conds": [[6, 0, "KeyArena 16,640"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11964047-8", "question": "What is the number of leading scorer of february 21?", "sql": {"sel": 5, "conds": [[1, 0, "February 21"]], "agg": 3}}
+{"phase": 1, "table_id": "1-11964263-13", "question": "Name the minimum game", "sql": {"sel": 0, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-1199219-2", "question": "How many successors were seated in the New York 20th district?", "sql": {"sel": 3, "conds": [[0, 0, "New York 20th"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12002388-1", "question": "How many teams placed 4th in the regular season?", "sql": {"sel": 1, "conds": [[3, 0, "4th"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12002388-1", "question": "How many open cups were hosted in 1993?", "sql": {"sel": 5, "conds": [[0, 0, 1993]], "agg": 3}}
+{"phase": 1, "table_id": "1-12002388-1", "question": "What year did they finish 1st, southern?", "sql": {"sel": 0, "conds": [[3, 0, "1st, Southern"]], "agg": 1}}
+{"phase": 1, "table_id": "1-12028543-3", "question": "How many losingteams were for the cup finaldate 20 August 1989?", "sql": {"sel": 4, "conds": [[1, 0, "20 August 1989"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12028543-3", "question": "How many seasons was the losing team Adelaide City?", "sql": {"sel": 0, "conds": [[4, 0, "Adelaide City"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12027364-1", "question": "How many womens singles winners were there when peter rasmussen won the mens singles?", "sql": {"sel": 2, "conds": [[1, 0, "Peter Rasmussen"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12030612-9", "question": "Name the number of titles written by adam i. lapidus", "sql": {"sel": 2, "conds": [[4, 0, "Adam I. Lapidus"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1206114-2", "question": "How many netflow version are there when the vendor and type is enterasys switches?", "sql": {"sel": 2, "conds": [[0, 0, "Enterasys Switches"]], "agg": 3}}
+{"phase": 1, "table_id": "1-120778-1", "question": "Name the minimum for prohibition?", "sql": {"sel": 1, "conds": [], "agg": 2}}
+{"phase": 1, "table_id": "1-120778-1", "question": "What is the number of jurisdiction for 57.3 percent?", "sql": {"sel": 0, "conds": [[2, 0, "57.3"]], "agg": 3}}
+{"phase": 1, "table_id": "1-120778-1", "question": "Name the max for prohibition.", "sql": {"sel": 1, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-12095519-1", "question": "How many trains leave from puri?", "sql": {"sel": 1, "conds": [[2, 0, "Puri"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12113888-1", "question": "How many times does the  rebuilt data contain cannot handle non-empty timestamp argument! 1929 and scrapped data contain cannot handle non-empty timestamp argument! 1954?", "sql": {"sel": 0, "conds": [[3, 0, "Cannot handle non-empty timestamp argument! 1929"], [5, 0, "Cannot handle non-empty timestamp argument! 1954"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12113888-1", "question": "How many times was the rebuilt data cannot handle non-empty timestamp argument! 1934?", "sql": {"sel": 0, "conds": [[3, 0, "Cannot handle non-empty timestamp argument! 1934"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12113888-1", "question": "What is the highest number listed?", "sql": {"sel": 0, "conds": [], "agg": 1}}
+{"phase": 1, "table_id": "1-1212189-1", "question": "The 1.6 Duratec model/engine has how many torque formulas?", "sql": {"sel": 4, "conds": [[0, 0, "1.6 Duratec"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1212189-1", "question": "How many capacities are possible for the 1.6 Duratec model/engine?", "sql": {"sel": 1, "conds": [[0, 0, "1.6 Duratec"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12134383-1", "question": " how many president with date of inauguration being 4june1979", "sql": {"sel": 1, "conds": [[3, 0, "4June1979"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12134383-1", "question": " how many end of term with age at inauguration being 64-066 64years, 66days", "sql": {"sel": 5, "conds": [[4, 0, "64-066 64years, 66days"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1213511-2", "question": "How many NHL teams does Terry French play for?", "sql": {"sel": 4, "conds": [[1, 0, "Terry French"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1213511-2", "question": "How many positions do the players of Chicago Black Hawks play in?", "sql": {"sel": 2, "conds": [[4, 0, "Chicago Black Hawks"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1213511-3", "question": "How many teams did Bob Peppler play for?", "sql": {"sel": 4, "conds": [[1, 0, "Bob Peppler"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1213511-7", "question": "what is the total number of pick # where nhl team is philadelphia flyers", "sql": {"sel": 0, "conds": [[4, 0, "Philadelphia Flyers"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12159115-2", "question": "What's the total number of episodes with production code 2T6705?", "sql": {"sel": 1, "conds": [[5, 0, "2T6705"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12159115-2", "question": "What's the total number of directors who've directed episodes seen by 11.34 million US viewers?", "sql": {"sel": 2, "conds": [[6, 0, "11.34"]], "agg": 3}}
+{"phase": 1, "table_id": "1-1216097-7", "question": "What is the number of runner up when the winner of women is norway and third is sweden?", "sql": {"sel": 2, "conds": [[5, 0, "Norway"], [3, 0, "Sweden"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12159115-3", "question": "How many episodes were written only by William N. Fordes?", "sql": {"sel": 0, "conds": [[4, 0, "William N. Fordes"]], "agg": 3}}
+{"phase": 1, "table_id": "1-12148147-2", "question": "How many classes are taken in the third year when pag-unawa was taken in the first year?", "sql": {"sel": 3, "conds": [[1, 0, "Pag-unawa"]], "agg": 3}}
+{"phase": 1, "table_id": "1-25794138-1", "question": "What was the maximum capacity of larry gomes stadium?", "sql": {"sel": 3, "conds": [[2, 0, "Larry Gomes Stadium"]], "agg": 1}}
+{"phase": 1, "table_id": "1-2508633-8", "question": "What is the pick number minimum if the player is Mark Bortz?", "sql": {"sel": 0, "conds": [[2, 0, "Mark Bortz"]], "agg": 2}}
