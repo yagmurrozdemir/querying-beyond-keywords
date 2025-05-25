@@ -51,8 +51,7 @@ project/
 │   └── Dockerfile
 ├── clip-api/              # CLIP FastAPI service
 ├── uploader/              # Table uploader to Elasticsearch
-├── docker-compose.yml
-└── 1966_Querying_Beyond_Keywords_.pdf  # Paper
+└──docker-compose.yml
 ```
 
 ---
