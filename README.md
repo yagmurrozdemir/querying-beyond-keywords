@@ -1,30 +1,30 @@
-# 🔍 Querying Beyond Keywords: NL-to-Elasticsearch DSL with Vector Search
+#  Querying Beyond Keywords: NL-to-Elasticsearch DSL with Vector Search
 
 This repository contains the **code, data, and pipeline** to reproduce the experiments presented in our paper:
 
-**📝 Title**: _Querying Beyond Keywords: Translating Natural Language to Elasticsearch DSL with Vector Search_  
-**📍 Submitted to**: NeurIPS 2025 (under review)  
+** Title**: _Querying Beyond Keywords: Translating Natural Language to Elasticsearch DSL with Vector Search_  
+** Submitted to**: NeurIPS 2025 (under review)  
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 We introduce the **first benchmark and pipeline** for translating natural language queries (NLQs) into **hybrid Elasticsearch DSL queries** that combine:
 
-- ✅ **Keyword-based filters**
-- ✅ **Vector-based semantic similarity via CLIP**
-- ✅ **Structured aggregation & filtering**
-- 🧠 Powered by **Large Language Models (LLMs)** via [Ollama](https://ollama.com/)
+-  **Keyword-based filters**
+-  **Vector-based semantic similarity via CLIP**
+-  **Structured aggregation & filtering**
+-  Powered by **Large Language Models (LLMs)** via [Ollama](https://ollama.com/)
 
 This project supports end-to-end training, evaluation, and reproducibility of results for:
 
-- ✅ Generating DSL queries from NLQs using models like `qwen2.5-coder`
-- ✅ Executing and comparing those queries on enriched tables
-- ✅ Evaluating structural correctness and execution accuracy
+-  Generating DSL queries from NLQs using models like `qwen2.5-coder`
+-  Executing and comparing those queries on enriched tables
+-  Evaluating structural correctness and execution accuracy
 
 ---
 
-## 📦 Repository Structure
+##  Repository Structure
 
 ```text
 project/
@@ -56,9 +56,9 @@ project/
 
 ---
 
-## 📥 Setup Instructions
+##  Setup Instructions
 
-### 1. 🧠 Ollama (for LLM-based query generation)
+### 1.  Ollama (for LLM-based query generation)
 
 Install [Ollama](https://ollama.com) and pull the model:
 
@@ -73,11 +73,11 @@ Start Ollama in **OpenAI-compatible mode**:
 OLLAMA_OPENAI_COMPAT=1 ollama serve
 ```
 
-> ✅ This enables `/v1/chat/completions` and is required for `openai.ChatCompletion.create(...)`.
+>  This enables `/v1/chat/completions` and is required for `openai.ChatCompletion.create(...)`.
 
 ---
 
-### 2. 🐳 Build the Project
+### 2.  Build the Project
 
 From the root:
 
@@ -93,7 +93,7 @@ This launches:
 
 ---
 
-## ⚙️ How the Pipeline Works
+## ⚙ How the Pipeline Works
 
 Each NLQ is converted and evaluated through these stages:
 
@@ -112,7 +112,7 @@ docker compose run pipeline
 
 ---
 
-## 📊 Reproducing Paper Results
+##  Reproducing Paper Results
 
 The paper reports performance on three groups:
 
@@ -129,7 +129,7 @@ python full_pipeline_runner.py
 
 ---
 
-## 📤 Uploading Your Own Tables
+##  Uploading Your Own Tables
 
 1. Format your table data as `tables.jsonl`
 2. Mount into `uploader/`
@@ -141,7 +141,7 @@ docker compose run uploader
 
 ---
 
-## 🧪 Test the CLIP API
+##  Test the CLIP API
 
 ```bash
 curl -X POST http://localhost:8000/text-embedding/   -H "Content-Type: application/json"   -d '{"text": "The Eiffel Tower is in Paris."}'
@@ -149,7 +149,7 @@ curl -X POST http://localhost:8000/text-embedding/   -H "Content-Type: applicati
 
 ---
 
-## 🧪 Benchmark Design (from paper)
+##  Benchmark Design (from paper)
 
 Our benchmark is built from 12,957 question–query–table triples, enriched with:
 
@@ -163,7 +163,7 @@ Each NLQ is paired with a hybrid DSL query that:
 
 ---
 
-## 🧾 Citation
+##  Citation
 
 ```bibtex
 @inproceedings{
