@@ -16,17 +16,25 @@ from transformers import (
 
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
-from nlq_to_es.config import TRAINING_CONFIG
+from nlq_to_es.config import TRAINING_CONFIG, FT_PROMPT_CONFIG
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
 
-def build_text_and_labels(example: Dict[str, Any], tokenizer: AutoTokenizer, max_length: int):
+def build_text_and_labels(
+    example: Dict[str, Any],
+    tokenizer: AutoTokenizer,
+    max_length: int,
+):
     """
     Expects each JSONL line to contain:
-      {"messages": [{"role":"system","content":"..."}, {"role":"user","content":"..."}, {"role":"assistant","content":"..."}]}
-    We train only on the assistant completion tokens by masking system+user tokens in labels (-100).
+    {"messages": [{"role":"system","content":"..."},
+                  {"role":"user","content":"..."},
+                  {"role":"assistant","content":"..."}]}
+
+    Only assistant completion tokens are used for loss.
+    System + user tokens are masked with -100.
     """
     messages: List[Dict[str, str]] = example["messages"]
 
@@ -62,6 +70,7 @@ def build_text_and_labels(example: Dict[str, Any], tokenizer: AutoTokenizer, max
         max_length=max_length,
         add_special_tokens=False,
     )
+
     input_ids = full["input_ids"]
     attention_mask = full["attention_mask"]
 
@@ -83,9 +92,18 @@ def collate_fn(batch):
     def pad(seq, pad_val):
         return seq + [pad_val] * (max_len - len(seq))
 
-    input_ids = torch.tensor([pad(x["input_ids"], 0) for x in batch], dtype=torch.long)
-    attention_mask = torch.tensor([pad(x["attention_mask"], 0) for x in batch], dtype=torch.long)
-    labels = torch.tensor([pad(x["labels"], -100) for x in batch], dtype=torch.long)
+    input_ids = torch.tensor(
+        [pad(x["input_ids"], 0) for x in batch],
+        dtype=torch.long,
+    )
+    attention_mask = torch.tensor(
+        [pad(x["attention_mask"], 0) for x in batch],
+        dtype=torch.long,
+    )
+    labels = torch.tensor(
+        [pad(x["labels"], -100) for x in batch],
+        dtype=torch.long,
+    )
 
     return {
         "input_ids": input_ids,
@@ -94,25 +112,26 @@ def collate_fn(batch):
     }
 
 
-def get_adapter_paths(adapter: str):
-    prompt_root = PROJECT_ROOT / "data" / "finetuning_prompts"
-    output_dir = PROJECT_ROOT / "data" / "outputs" / f"{adapter}_adapter"
-
+def get_adapter_data_paths(adapter: str):
     return {
-        "train_file": str(prompt_root / "train" / f"{adapter}.jsonl"),
-        "validation_file": str(prompt_root / "validation" / f"{adapter}.jsonl"),
-        "test_file": str(prompt_root / "test" / f"{adapter}.jsonl"),
-        "output_dir": str(output_dir),
+        "train_file": str(Path(FT_PROMPT_CONFIG["train"][adapter])),
+        "validation_file": str(Path(FT_PROMPT_CONFIG["validation"][adapter])),
+        "test_file": str(Path(FT_PROMPT_CONFIG["test"][adapter])),
     }
+
 
 
 def train_adapter(adapter: str):
     train_cfg = TRAINING_CONFIG
-    data_cfg = get_adapter_paths(adapter)
+    data_cfg = get_adapter_data_paths(adapter)
+    output_dir = train_cfg["output_path"][adapter]
 
-    os.makedirs(data_cfg["output_dir"], exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
 
-    tokenizer = AutoTokenizer.from_pretrained(train_cfg["model_name_or_path"], use_fast=True)
+    tokenizer = AutoTokenizer.from_pretrained(
+        train_cfg["model_name_or_path"],
+        use_fast=True,
+    )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -133,7 +152,15 @@ def train_adapter(adapter: str):
     model.gradient_checkpointing_enable()
     model = prepare_model_for_kbit_training(model)
 
-    target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    target_modules = [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj",
+    ]
 
     lora_config = LoraConfig(
         r=train_cfg["lora_r"],
@@ -156,13 +183,20 @@ def train_adapter(adapter: str):
     def map_fn(ex):
         return build_text_and_labels(ex, tokenizer, train_cfg["max_length"])
 
-    train_ds = ds["train"].map(map_fn, remove_columns=ds["train"].column_names)
+    train_ds = ds["train"].map(
+        map_fn,
+        remove_columns=ds["train"].column_names,
+    )
+
     eval_ds = None
     if "validation" in ds:
-        eval_ds = ds["validation"].map(map_fn, remove_columns=ds["validation"].column_names)
+        eval_ds = ds["validation"].map(
+            map_fn,
+            remove_columns=ds["validation"].column_names,
+        )
 
     training_args = TrainingArguments(
-        output_dir=data_cfg["output_dir"],
+        output_dir=output_dir,
         overwrite_output_dir=True,
         per_device_train_batch_size=train_cfg["per_device_train_batch_size"],
         per_device_eval_batch_size=train_cfg["per_device_eval_batch_size"],
@@ -195,8 +229,8 @@ def train_adapter(adapter: str):
     )
 
     trainer.train()
-    trainer.save_model(data_cfg["output_dir"])
-    tokenizer.save_pretrained(data_cfg["output_dir"])
+    trainer.save_model(output_dir)
+    tokenizer.save_pretrained(output_dir)
 
 
 def main():

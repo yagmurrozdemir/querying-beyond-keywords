@@ -9,10 +9,12 @@ if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
 
 from nlq_to_es.training.train_qlora import train_adapter
-
+from nlq_to_es.training.make_mixed_jsonl import apply_soft_balancing
 
 def main():
     adapter = "basic"   # "basic" | "agg" | "knn" | "mixed"
+    if adapter == "mixed":
+        apply_soft_balancing()
     train_adapter(adapter)
 
 

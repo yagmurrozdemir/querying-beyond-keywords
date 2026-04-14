@@ -1,5 +1,10 @@
 import os
+from pathlib import Path
 
+# =========================
+# Project root
+# =========================
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 # =========================
 # Elasticsearch
 # =========================
@@ -88,40 +93,72 @@ TRAINING_CONFIG = {
     "lora_r": 16,
     "lora_alpha": 32,
     "lora_dropout": 0.05,
-    "gpu": 1
+    "gpu": 1,
+    "output_path": {
+        "basic": PROJECT_ROOT / "data/outputs/basic_adapter",
+        "agg": PROJECT_ROOT / "data/outputs/agg_adapter",
+        "knn": PROJECT_ROOT / "data/outputs/knn_adapter",
+        "mixed": PROJECT_ROOT / "data/outputs/mixed_adapter"
+    }
 }
 
+SAMPLING_CONFIG = {
+    "split": "train",
+    "alpha": 0.4,
+    "seed": 42,
+    "size": 0
+}
 # =========================
 # Dataset + paths
 # =========================
 DATA_CONFIG = {
     "train": {
-        "basic": "data/dataset/queries/train/basic_query.jsonl",
-        "agg": "data/dataset/queries/train/agg_query.jsonl",
-        "knn": "data/dataset/queries/train/knn_query.jsonl",
-        "tables": "data/dataset/tables/train.jsonl"
+        "basic": PROJECT_ROOT / "data/dataset/queries/train/basic_query.jsonl",
+        "agg": PROJECT_ROOT / "data/dataset/queries/train/agg_query.jsonl",
+        "knn": PROJECT_ROOT / "data/dataset/queries/train/knn_query.jsonl",
+        "tables": PROJECT_ROOT / "data/dataset/tables/train.jsonl"
     },
     "validation": {
-        "basic": "data/dataset/queries/validation/basic_query.jsonl",
-        "agg": "data/dataset/queries/validation/agg_query.jsonl",
-        "knn": "data/dataset/queries/validation/knn_query.jsonl",
-        "tables": "data/dataset/tables/validation.jsonl"
+        "basic": PROJECT_ROOT / "data/dataset/queries/validation/basic_query.jsonl",
+        "agg": PROJECT_ROOT / "data/dataset/queries/validation/agg_query.jsonl",
+        "knn": PROJECT_ROOT / "data/dataset/queries/validation/knn_query.jsonl",
+        "tables": PROJECT_ROOT / "data/dataset/tables/validation.jsonl"
     },
     "test": {
-        "basic": "data/dataset/queries/test/basic_query.jsonl",
-        "agg": "data/dataset/queries/test/agg_query.jsonl",
-        "knn": "data/dataset/queries/test/knn_query.jsonl",
-        "tables": "data/dataset/tables/test.jsonl"
+        "basic": PROJECT_ROOT / "data/dataset/queries/test/basic_query.jsonl",
+        "agg": PROJECT_ROOT / "data/dataset/queries/test/agg_query.jsonl",
+        "knn": PROJECT_ROOT / "data/dataset/queries/test/knn_query.jsonl",
+        "tables": PROJECT_ROOT / "data/dataset/tables/test.jsonl"
     }
 }
 
+FT_PROMPT_CONFIG = {
+    "train": {
+        "basic": PROJECT_ROOT / "data/finetuning_prompts/train/basic.jsonl",
+        "agg": PROJECT_ROOT / "data/finetuning_prompts/train/agg.jsonl",
+        "knn": PROJECT_ROOT / "data/finetuning_prompts/train/knn.jsonl",
+        "mixed": PROJECT_ROOT / "data/finetuning_prompts/train/mixed.jsonl"
+    },
+    "validation": {
+        "basic": PROJECT_ROOT / "data/finetuning_prompts/validation/basic.jsonl",
+        "agg": PROJECT_ROOT / "data/finetuning_prompts/validation/agg.jsonl",
+        "knn": PROJECT_ROOT / "data/finetuning_prompts/validation/knn.jsonl",
+        "mixed": PROJECT_ROOT / "data/finetuning_prompts/validation/mixed.jsonl"
+    },
+    "test": {
+        "basic": PROJECT_ROOT / "data/finetuning_prompts/test/basic.jsonl",
+        "agg": PROJECT_ROOT / "data/finetuning_prompts/test/agg.jsonl",
+        "knn": PROJECT_ROOT / "data/finetuning_prompts/test/knn.jsonl",
+        "mixed": PROJECT_ROOT / "data/finetuning_prompts/test/mixed.jsonl"
+    }
+}
 
 HF_DATASET_CONFIG = {
     "dataset_name": "ayselyagmur/dataset",
-    "cache_dir": "cache/huggingface",
-    "local_output_dir": "data/dataset",
+    "cache_dir": PROJECT_ROOT / "cache/huggingface",
+    "local_output_dir": PROJECT_ROOT / "data/dataset",
 }
 
 TABLE_UPLOAD_CONFIG = {
-    "jsonl_file": "data/dataset/tables/test.jsonl"
+    "jsonl_file": PROJECT_ROOT / "data/dataset/tables/test.jsonl"
 }

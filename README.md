@@ -4,44 +4,60 @@ This repository contains the implementation of the benchmark and experimental pi
 
 **“Querying Beyond Keywords: Translating Natural Language to Elasticsearch DSL with Vector Search Support”**
 
----
-
-## Overview
-
-This project investigates the ability of Large Language Models (LLMs) to translate natural language queries (NLQs) into executable Elasticsearch DSL queries, including hybrid queries that combine:
-
-* keyword-based filtering
-* vector-based semantic retrieval (k-NN)
-
-The repository provides:
-
-* a benchmark derived from WikiSQL
-* a pipeline for hybrid query construction
-* inference scripts for multiple LLMs
-* execution-based evaluation
-* parameter-efficient fine-tuning (QLoRA)
+The project investigates the ability of Large Language Models (LLMs) to translate natural language queries (NLQs) into executable Elasticsearch DSL queries, including hybrid queries that combine keyword-based filtering and vector-based semantic retrieval (k-NN).
 
 ---
 
-## Requirements
+## Note
+
+For legal and licensing conditions, please make sure to refer to the [LICENSE](./LICENSE) file. Any external software or product 
+referenced in any manner from this repository is remaining under its original license and usage conditions, and we deny any 
+liability for its usage and for any consequences thereof.
+
+The EXA4MIND platform is currently under significant development. When using our modules, please consider security aspects. We are
+happy to receive feedback from you.
+
+---
+
+## Installation and Usage
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yagmurrozdemir/querying-beyond-keywords.git
+cd querying-beyond-keywords
+```
+
+Create a virtual environment and install dependencies:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+---
+
+### Requirements
 
 * Python 3.10+
-* A running Elasticsearch instance (see below)
+* A running Elasticsearch instance
 * (Optional) Ollama for local model inference
 
 ---
 
-## Elasticsearch Requirement
+### Elasticsearch Requirement
 
-⚠️ Elasticsearch must be running before executing the setup or pipeline.
+**Elasticsearch must be running** before executing the setup or pipeline.
 
 This project depends on a local Elasticsearch instance for index creation and query execution.
 
-Your Elasticsearch credentials must be defined **before running the setup script**. This can be done in either:
+Your Elasticsearch credentials must be defined before running the setup script. This can be done in either:
 
 * a `.env` file
 * or directly in `src/nlq_to_es/config.py`
-
 
 ⚠️ If Elasticsearch is not running or credentials are incorrect:
 
@@ -50,14 +66,9 @@ Your Elasticsearch credentials must be defined **before running the setup script
 
 ---
 
-## Ollama Requirement (for Local Models)
+### Ollama Requirement (Optional)
 
-If you are using local models, **Ollama must be running**.
-
-This project supports inference via Ollama-based models. Ensure that:
-
-* Ollama is running locally
-* the required model is installed
+If local models are used, **Ollama must be running** and the required model must be available.
 
 You can start a model with:
 
@@ -65,94 +76,27 @@ You can start a model with:
 ollama run <model_name>
 ```
 
-Example configuration is defined in `src/nlq_to_es/config.py`.
-
-⚠️ If Ollama is not running or the model is not available:
+⚠️ If Ollama is not running or the model is unavailable:
 
 * inference will fail
 * no predictions will be generated
 
 ---
 
-## Project Structure
+## Setup
 
-```id="7t1b7v"
-nlq_to_es_project/
-├── src/                  # Core implementation
-├── scripts/
-│   ├── setup/            # Setup utilities (dataset + indices)
-│   ├── run_batch_inference.py
-│   └── run_evaluation.py
-├── prompts/              # Prompt templates
-├── data/                 # Dataset and outputs
-├── tests/
-├── setup.sh              # One-command setup
-├── requirements.txt
-├── requirements_finetuning.txt
-└── README.md
-```
+Run the full setup:
 
----
-
-## Data Organization
-
-```id="2u7d7x"
-data/
-├── dataset/              # Benchmark dataset (downloaded automatically)
-├── inputs/               # Reserved (currently empty)
-├── predictions/          # Raw LLM outputs (.out)
-├── outputs/              # Fine-tuning outputs (adapters/checkpoints)
-├── intermediate/         # Temporary files
-├── resources/            # Mappings and schemas
-```
-
----
-
-## Setup (Recommended)
-
-⚠️ Ensure Elasticsearch is running and credentials are configured before proceeding.
-
-Run the full setup with one command:
-
-```bash id="2twr6k"
+```bash
 bash setup.sh
 ```
 
 This will:
 
-1. Create a virtual environment (`venv/`)
+1. Create a virtual environment
 2. Install dependencies
-3. Download dataset from Hugging Face
+3. Download the dataset
 4. Build Elasticsearch indices
-
----
-
-## Manual Setup (Optional)
-
-### 1. Create environment
-
-```bash id="l9u2c9"
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 2. Install dependencies
-
-```bash id="k6k3mw"
-pip install -r requirements.txt
-```
-
-### 3. Download dataset
-
-```bash id="k6bc8g"
-python scripts/setup/download_hf_dataset.py
-```
-
-### 4. Build indices
-
-```bash id="f5r3n5"
-python scripts/setup/build_indices.py
-```
 
 ---
 
@@ -164,7 +108,7 @@ https://huggingface.co/datasets/ayselyagmur/dataset
 
 Expected structure:
 
-```id="eq8g3k"
+```
 data/dataset/
 ├── queries/
 │   ├── train/
@@ -177,15 +121,15 @@ data/dataset/
 
 ## Running the Pipeline
 
-### 1. Inference
+### Inference
 
-```bash id="s7m0lc"
+```bash
 python scripts/run_batch_inference.py
 ```
 
-### 2. Evaluation
+### Evaluation
 
-```bash id="qg5j7n"
+```bash
 python scripts/run_evaluation.py
 ```
 
@@ -193,16 +137,17 @@ python scripts/run_evaluation.py
 
 ## Evaluation Protocol
 
-We use **execution accuracy** as the primary metric:
+We use execution accuracy as the primary metric:
 
 * A query is correct if it returns the same result set as the reference query
-* Each experiment is repeated **5 times**
-* Results are reported as **mean ± standard deviation**
-* Evaluated across:
+* Each experiment is repeated 5 times
+* Results are reported as mean ± standard deviation
 
-  * Basic queries
-  * Aggregation queries
-  * k-NN queries
+Evaluation is performed across:
+
+* Basic queries
+* Aggregation queries
+* k-NN queries
 
 ---
 
@@ -210,7 +155,7 @@ We use **execution accuracy** as the primary metric:
 
 We fine-tune **Qwen2.5-Coder-32B-Instruct** using QLoRA:
 
-```bash id="ewg0tf"
+```bash
 python scripts/run_finetuning.py
 ```
 
@@ -223,30 +168,45 @@ Adapters:
 
 ---
 
-## Notes
+## Project Structure
 
-* k-NN queries use a placeholder (`$vector$`)
-* Embeddings are generated externally
-* Elasticsearch must be running before executing queries
-
----
-
-## License
-
-MIT License © 2026 Aysel Yağmur Özdemir
-
-Developed in support of the **EXA4MIND project**
-(EU Horizon Europe Grant No. 101092944)
-
----
-
-## Citation
-
-```id="l5wfxf"
-@article{ozdemir2026querying,
-  title={Querying Beyond Keywords: Translating Natural Language to Elasticsearch DSL with Vector Search Support},
-  author={Ozdemir, Aysel Yagmur and Karagoz, Pinar and Toroslu, Ismail Hakki},
-  journal={},
-  year={2026}
-}
 ```
+nlq_to_es_project/
+├── src/                  # Core implementation
+├── scripts/
+│   ├── setup/            # Setup utilities (dataset + indices)
+│   ├── run_batch_inference.py
+│   └── run_evaluation.py
+├── prompts/              # Prompt templates
+├── data/                 # Dataset and outputs
+├── setup.sh              # One-command setup
+├── requirements.txt
+├── requirements_finetuning.txt
+└── README.md
+```
+
+---
+
+## Data Organization
+
+```
+data/
+├── dataset/              # Benchmark dataset (downloaded automatically)
+├── inputs/               # Reserved (currently empty)
+├── predictions/          # Raw LLM outputs (.out)
+├── outputs/              # Fine-tuning outputs (adapters/checkpoints)
+├── intermediate/         # Temporary files
+├── resources/            # Mappings and schemas
+```
+
+---
+
+## Initial version contributor(s)
+
+Aysel Yagmur Ozdemir (METU)
+
+## Acknowledgement
+
+This work received the support of the EXA4MIND project, funded by the European Union´s Horizon Europe Research and Innovation Programme, under Grant Agreement N° 101092944. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the granting authority can be held responsible for them.
+
+We thank the authors of all open-source work re-used or leveraged upon here.
