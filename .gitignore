@@ -1,0 +1,29 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Jupyter (if any)
+.ipynb_checkpoints/
+
+# Hugging Face cache (optional)
+cache/
+
+# Data outputs (OPTIONAL — depends on your repo policy)
+# Uncomment if you don't want to upload generated results
+# data/outputs/
+# data/predictions/
+# data/intermediate/
