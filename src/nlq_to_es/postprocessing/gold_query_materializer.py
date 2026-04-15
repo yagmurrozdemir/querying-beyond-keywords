@@ -54,7 +54,6 @@ def to_valid_json_string(query_text) -> str:
 def convert_to_elasticsearch_dsl_text(data):
     
     table_id = data['table_id']
-    print("hii!", table_id)
     sql = data['sql']
     index_name = f"table{table_id.replace('-', '_')[1:]}"
 
@@ -82,7 +81,7 @@ def convert_to_elasticsearch_dsl_text(data):
             if col_type == 'text':
                 conditions.append({"term": {f"{col_name}.keyword": {"value": value, "case_insensitive": True}}})
             elif col_type == 'dense_vector':
-                conditions.append({"knn": {"field": col_name, "query_vector": value, "k": 20, "similarity": 0.98}})  # Increase k to 10 to get more results
+                conditions.append({"knn": {"field": col_name, "query_vector": value, "k": 20, "similarity": 0.98}})  
             
                 
             else:

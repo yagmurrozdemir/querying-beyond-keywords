@@ -13,7 +13,6 @@ def create_es_client():
     )
 
 
-def get_index_mapping(index_name):
-    es_client = create_es_client()
+def get_index_mapping(es_client, index_name):
     mapping = es_client.indices.get_mapping(index=index_name)
     return str(mapping)

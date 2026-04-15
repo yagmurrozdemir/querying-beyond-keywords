@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import sys
+import argparse
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_ROOT = PROJECT_ROOT / "src"
@@ -17,19 +18,19 @@ from nlq_to_es.generation.inference_pipeline import (
     postprocess_output,
 )
 
+VALID_QUERY_TYPES = {"basic", "agg", "knn"}
+VALID_SETTINGS = {"zero_shot", "few_shot", "finetuned"}
+VALID_ADAPTERS = {"basic", "agg", "knn", "mixed"}
 
-def main():
-    # ------------------------------------------------------------------
-    # Hardcoded single-query inputs
-    # ------------------------------------------------------------------
-    query_type = "basic"        # "basic" | "agg" | "knn"
-    adapter = None              # None | "basic" | "agg" | "knn" | "mixed"
-    setting = "few_shot"       # "zero_shot" | "few_shot" | "finetuned"
-    nlq = "what is the fuel propulsion where the fleet series (quantity) is 310-329 (20)?"
-    gold_query = ""             # provided input, not used in this script
-    index_name = "table_10007452_3"
-
-    index_mapping = get_index_mapping(index_name)
+def run_single_query(
+    query_type: str,
+    setting: str,
+    nlq: str,
+    index_name: str,
+    adapter=None,
+) -> None:
+    es_client = create_es_client()
+    index_mapping = get_index_mapping(es_client, index_name)
     model_bundle = load_model_bundle(setting=setting, adapter=adapter)
 
     prompt_text = build_prompt(
@@ -52,7 +53,7 @@ def main():
         query_type=query_type,
     )
 
-    es_client = create_es_client()
+    
     execution_result = execute_query(
         es_client=es_client,
         index_name=index_name,
@@ -65,6 +66,63 @@ def main():
 
     print("=== Execution Result ===")
     print(execution_result)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Generate and execute a query for a single natural language question."
+    )
+
+    parser.add_argument(
+        "--query-type",
+        required=True,
+        choices=sorted(VALID_QUERY_TYPES),
+        help="Query type to generate.",
+    )
+    parser.add_argument(
+        "--setting",
+        required=True,
+        choices=sorted(VALID_SETTINGS),
+        help="Inference setting to use.",
+    )
+    parser.add_argument(
+        "--nlq",
+        required=True,
+        help="Natural language query.",
+    )
+    parser.add_argument(
+        "--index-name",
+        required=True,
+        help="Elasticsearch index name.",
+    )
+    parser.add_argument(
+        "--adapter",
+        choices=sorted(VALID_ADAPTERS),
+        default=None,
+        help="Adapter name (only for finetuned setting).",
+    )
+
+    args = parser.parse_args()
+
+    if args.setting == "finetuned" and args.adapter is None:
+        parser.error("--adapter is required when --setting=finetuned.")
+
+    if args.setting != "finetuned" and args.adapter is not None:
+        parser.error("--adapter should only be used when --setting=finetuned.")
+
+    return args
+
+
+def main() -> None:
+    args = parse_args()
+
+    run_single_query(
+        query_type=args.query_type,
+        setting=args.setting,
+        nlq=args.nlq,
+        index_name=args.index_name,
+        adapter=args.adapter,
+    )
 
 
 if __name__ == "__main__":

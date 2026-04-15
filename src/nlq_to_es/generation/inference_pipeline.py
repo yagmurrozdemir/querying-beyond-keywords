@@ -5,7 +5,7 @@ from nlq_to_es.config import MODEL_CONFIG
 from nlq_to_es.generation.zero_shot_prompt_generator import generate_prompt as generate_zero_shot_prompt
 from nlq_to_es.generation.few_shot_prompt_generator import generate_prompt as generate_few_shot_prompt
 from nlq_to_es.generation.ollama_response_generator import get_ollama_response
-from nlq_to_es.io.readers import read_text, load_jsonl
+from nlq_to_es.io.readers import read_text
 from nlq_to_es.postprocessing.knn_pipeline import process_knn_output
 
 

@@ -5,6 +5,21 @@ from pathlib import Path
 # Project root
 # =========================
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+# =========================
+# Common directories
+# =========================
+DATA_DIR = PROJECT_ROOT / "data"
+DATASET_DIR = DATA_DIR / "dataset"
+QUERIES_DIR = DATASET_DIR / "queries"
+TABLES_DIR = DATASET_DIR / "tables"
+FT_PROMPTS_DIR = DATA_DIR / "finetuning_prompts"
+OUTPUTS_DIR = DATA_DIR / "outputs"
+CACHE_DIR = PROJECT_ROOT / "cache"
+PREDICTIONS_DIR = DATA_DIR / "predictions"
+RESULTS_DIR = DATA_DIR / "results"
+
+
 # =========================
 # Elasticsearch
 # =========================
@@ -95,10 +110,10 @@ TRAINING_CONFIG = {
     "lora_dropout": 0.05,
     "gpu": 1,
     "output_path": {
-        "basic": PROJECT_ROOT / "data/outputs/basic_adapter",
-        "agg": PROJECT_ROOT / "data/outputs/agg_adapter",
-        "knn": PROJECT_ROOT / "data/outputs/knn_adapter",
-        "mixed": PROJECT_ROOT / "data/outputs/mixed_adapter"
+        "basic": OUTPUTS_DIR / "basic_adapter",
+        "agg": OUTPUTS_DIR / "agg_adapter",
+        "knn": OUTPUTS_DIR / "knn_adapter",
+        "mixed": OUTPUTS_DIR / "mixed_adapter"
     }
 }
 
@@ -113,52 +128,52 @@ SAMPLING_CONFIG = {
 # =========================
 DATA_CONFIG = {
     "train": {
-        "basic": PROJECT_ROOT / "data/dataset/queries/train/basic_query.jsonl",
-        "agg": PROJECT_ROOT / "data/dataset/queries/train/agg_query.jsonl",
-        "knn": PROJECT_ROOT / "data/dataset/queries/train/knn_query.jsonl",
-        "tables": PROJECT_ROOT / "data/dataset/tables/train.jsonl"
+        "basic": QUERIES_DIR / "train/basic_query.jsonl",
+        "agg": QUERIES_DIR / "train/agg_query.jsonl",
+        "knn": QUERIES_DIR / "train/knn_query.jsonl",
+        "tables": TABLES_DIR / "train.jsonl"
     },
     "validation": {
-        "basic": PROJECT_ROOT / "data/dataset/queries/validation/basic_query.jsonl",
-        "agg": PROJECT_ROOT / "data/dataset/queries/validation/agg_query.jsonl",
-        "knn": PROJECT_ROOT / "data/dataset/queries/validation/knn_query.jsonl",
-        "tables": PROJECT_ROOT / "data/dataset/tables/validation.jsonl"
+        "basic": QUERIES_DIR / "validation/basic_query.jsonl",
+        "agg": QUERIES_DIR / "validation/agg_query.jsonl",
+        "knn": QUERIES_DIR / "validation/knn_query.jsonl",
+        "tables": TABLES_DIR / "validation.jsonl"
     },
     "test": {
-        "basic": PROJECT_ROOT / "data/dataset/queries/test/basic_query.jsonl",
-        "agg": PROJECT_ROOT / "data/dataset/queries/test/agg_query.jsonl",
-        "knn": PROJECT_ROOT / "data/dataset/queries/test/knn_query.jsonl",
-        "tables": PROJECT_ROOT / "data/dataset/tables/test.jsonl"
+        "basic": QUERIES_DIR / "test/basic_query.jsonl",
+        "agg": QUERIES_DIR / "test/agg_query.jsonl",
+        "knn": QUERIES_DIR / "test/knn_query.jsonl",
+        "tables": TABLES_DIR / "test.jsonl"
     }
 }
 
 FT_PROMPT_CONFIG = {
     "train": {
-        "basic": PROJECT_ROOT / "data/finetuning_prompts/train/basic.jsonl",
-        "agg": PROJECT_ROOT / "data/finetuning_prompts/train/agg.jsonl",
-        "knn": PROJECT_ROOT / "data/finetuning_prompts/train/knn.jsonl",
-        "mixed": PROJECT_ROOT / "data/finetuning_prompts/train/mixed.jsonl"
+        "basic": FT_PROMPTS_DIR / "train/basic.jsonl",
+        "agg": FT_PROMPTS_DIR / "train/agg.jsonl",
+        "knn": FT_PROMPTS_DIR / "train/knn.jsonl",
+        "mixed": FT_PROMPTS_DIR / "train/mixed.jsonl"
     },
     "validation": {
-        "basic": PROJECT_ROOT / "data/finetuning_prompts/validation/basic.jsonl",
-        "agg": PROJECT_ROOT / "data/finetuning_prompts/validation/agg.jsonl",
-        "knn": PROJECT_ROOT / "data/finetuning_prompts/validation/knn.jsonl",
-        "mixed": PROJECT_ROOT / "data/finetuning_prompts/validation/mixed.jsonl"
+        "basic": FT_PROMPTS_DIR / "validation/basic.jsonl",
+        "agg": FT_PROMPTS_DIR / "validation/agg.jsonl",
+        "knn": FT_PROMPTS_DIR / "validation/knn.jsonl",
+        "mixed": FT_PROMPTS_DIR / "validation/mixed.jsonl"
     },
     "test": {
-        "basic": PROJECT_ROOT / "data/finetuning_prompts/test/basic.jsonl",
-        "agg": PROJECT_ROOT / "data/finetuning_prompts/test/agg.jsonl",
-        "knn": PROJECT_ROOT / "data/finetuning_prompts/test/knn.jsonl",
-        "mixed": PROJECT_ROOT / "data/finetuning_prompts/test/mixed.jsonl"
+        "basic": FT_PROMPTS_DIR / "test/basic.jsonl",
+        "agg": FT_PROMPTS_DIR / "test/agg.jsonl",
+        "knn": FT_PROMPTS_DIR / "test/knn.jsonl",
+        "mixed": FT_PROMPTS_DIR / "test/mixed.jsonl"
     }
 }
 
 HF_DATASET_CONFIG = {
     "dataset_name": "ayselyagmur/dataset",
-    "cache_dir": PROJECT_ROOT / "cache/huggingface",
-    "local_output_dir": PROJECT_ROOT / "data/dataset",
+    "cache_dir": CACHE_DIR / "huggingface",
+    "local_output_dir": DATASET_DIR,
 }
 
 TABLE_UPLOAD_CONFIG = {
-    "jsonl_file": PROJECT_ROOT / "data/dataset/tables/test.jsonl"
+    "jsonl_file": TABLES_DIR / "test.jsonl"
 }

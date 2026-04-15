@@ -115,8 +115,7 @@ def collate_fn(batch):
 def get_adapter_data_paths(adapter: str):
     return {
         "train_file": str(Path(FT_PROMPT_CONFIG["train"][adapter])),
-        "validation_file": str(Path(FT_PROMPT_CONFIG["validation"][adapter])),
-        "test_file": str(Path(FT_PROMPT_CONFIG["test"][adapter])),
+        "validation_file": str(Path(FT_PROMPT_CONFIG["validation"][adapter]))
     }
 
 

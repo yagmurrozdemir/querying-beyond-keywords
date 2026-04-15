@@ -5,7 +5,7 @@ from typing import Any, Dict, Union
 
 from elasticsearch import Elasticsearch
 from nlq_to_es.config import ELASTIC_CONFIG
-
+from elasticsearch import exceptions
 
 def create_es_client() -> Elasticsearch:
     return Elasticsearch(

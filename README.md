@@ -30,12 +30,18 @@ git clone https://github.com/yagmurrozdemir/querying-beyond-keywords.git
 cd querying-beyond-keywords
 ```
 
-Create a virtual environment and install dependencies:
+(Optional) Create a virtual environment and install dependencies manually:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+Alternatively, you can run the full setup script (recommended):
+
+```bash
+bash setup.sh
 ```
 
 ---
@@ -44,7 +50,7 @@ pip install -r requirements.txt
 
 * Python 3.10+
 * A running Elasticsearch instance
-* (Optional) Ollama for local model inference
+* (Optional) Ollama for local LLM inference
 
 ---
 
@@ -54,10 +60,9 @@ pip install -r requirements.txt
 
 This project depends on a local Elasticsearch instance for index creation and query execution.
 
-Your Elasticsearch credentials must be defined before running the setup script. This can be done in either:
+Your Elasticsearch credentials must be defined before running the setup script.
 
-* a `.env` file
-* or directly in `src/nlq_to_es/config.py`
+They can be configured via environment variables or directly in `src/nlq_to_es/config.py`.
 
 ⚠️ If Elasticsearch is not running or credentials are incorrect:
 
@@ -96,7 +101,7 @@ This will:
 1. Create a virtual environment
 2. Install dependencies
 3. Download the dataset
-4. Build Elasticsearch indices
+4. Build Elasticsearch indices (currently using test tables)
 
 ---
 
@@ -124,13 +129,31 @@ data/dataset/
 ### Inference
 
 ```bash
-python scripts/run_batch_inference.py
+python scripts/run_batch_inference.py \
+  --query-type basic \
+  --setting zero_shot \
+  --run-id 1
 ```
 
+### Single Query Execution
+
+You can test a single NLQ and directly execute it:
+
+```bash
+python scripts/run_single_query.py \
+  --query-type basic \
+  --setting few_shot \
+  --nlq "your question here" \
+  --index-name table_xxx
+```
+  
 ### Evaluation
 
 ```bash
-python scripts/run_evaluation.py
+python scripts/run_evaluation.py \
+  --query-type basic \
+  --setting zero_shot \
+  --run-id 1
 ```
 
 ---
@@ -156,8 +179,21 @@ Evaluation is performed across:
 We fine-tune **Qwen2.5-Coder-32B-Instruct** using QLoRA:
 
 ```bash
-python scripts/run_finetuning.py
+python scripts/run_finetuning.py --adapter basic
 ```
+
+⚠️ Fine-tuned adapter usage (both training and inference) requires additional dependencies.
+
+Before running fine-tuning or using `setting="finetuned"` in inference, install:
+
+```bash
+pip install -r requirements_finetuning.txt
+```
+
+If these dependencies are not installed:
+
+* fine-tuned inference will fail
+* adapter loading will not work
 
 Adapters:
 
@@ -176,7 +212,9 @@ nlq_to_es_project/
 ├── scripts/
 │   ├── setup/            # Setup utilities (dataset + indices)
 │   ├── run_batch_inference.py
-│   └── run_evaluation.py
+│   ├── run_evaluation.py
+│   ├── run_finetuning.py
+│   └── run_single_query.py
 ├── prompts/              # Prompt templates
 ├── data/                 # Dataset and outputs
 ├── setup.sh              # One-command setup
@@ -192,11 +230,11 @@ nlq_to_es_project/
 ```
 data/
 ├── dataset/              # Benchmark dataset (downloaded automatically)
-├── inputs/               # Reserved (currently empty)
 ├── predictions/          # Raw LLM outputs (.out)
-├── outputs/              # Fine-tuning outputs (adapters/checkpoints)
-├── intermediate/         # Temporary files
+├── results/              # Execution results after running queries on Elasticsearch
+├── outputs/              # Generated fine-tuning outputs (adapters/checkpoints)
 ├── resources/            # Mappings and schemas
+├── finetuning_prompts/   # Training/validation/test JSONL files used for fine-tuning adapters
 ```
 
 ---
